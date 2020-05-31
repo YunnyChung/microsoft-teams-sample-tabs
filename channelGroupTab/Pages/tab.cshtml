@@ -8,12 +8,13 @@
 
 <script>
     //initialize microsoftTeams in _Layout page
+    microsoftTeams.initialize()
 
     let saveGray = () => {
         microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
             microsoftTeams.settings.setSettings({
-                websiteUrl: "replace with ngrok address",
-                contentUrl: "replace with ngrok address/gray",
+                websiteUrl: 'https://2b252205eb09.ngrok.io',
+                contentUrl: 'https://2b252205eb09.ngrok.io/gray',
                 entityId: "grayIconTab",
                 suggestedDisplayName: "MyNewTab",
                 removeUrl: ""
@@ -24,8 +25,8 @@
     let saveRed = () => {
         microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
             microsoftTeams.settings.setSettings({
-                websiteUrl: "replace with ngrok address",
-                contentUrl: "replace with ngrok address/red",
+                websiteUrl: 'https://2b252205eb09.ngrok.io',
+                contentUrl: 'https://2b252205eb09.ngrok.io/red',
                 entityId: "redIconTab",
                 suggestedDisplayName: "MyNewTab",
                 removeUrl: ""
